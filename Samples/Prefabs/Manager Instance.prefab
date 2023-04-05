@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda3e39ac3b6ac349ad2e9df9e5c7647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 11400000, guid: dad172510d0b65e4091252e1cea156e3, type: 2}
-  completionArguments: {fileID: 11400000, guid: d5cf2c3cf4eb70548bec84f5455d2561,
+  key: {fileID: 11400000, guid: 3e2e946e10cf3bf4d920b019e89bf398, type: 2}
+  completionArguments: {fileID: 11400000, guid: a67c7d457e8117f4eb1838a091f7ab7d,
     type: 2}

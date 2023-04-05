@@ -21,7 +21,20 @@ public class ChatGPTmanager : MonoBehaviour
 
     // "{ \"model\": \"gpt-3.5-turbo\", \"messages\": [{\"role\": \"user\", \"content\": \"Hello!\"}] }";
 
+    private void Start()
+    {
+        if (key == null || string.IsNullOrEmpty(key.apiKey))
+        {
+            Debug.LogError("No key set");
+            return;
+        }
 
+        if (completionArguments == null)
+        {
+            Debug.LogError(completionArguments.name + " not set");
+            return;
+        }
+    }
     /// <summary>
     /// Executes a webrequest and returns results via Actions
     /// </summary>
@@ -36,17 +49,7 @@ public class ChatGPTmanager : MonoBehaviour
             Debug.LogWarning("Input is empty");
             return;
         }
-        if (key == null || string.IsNullOrEmpty(key.apiKey))
-        {
-            Debug.LogWarning("No key set");
-            return;
-        }
 
-        if (completionArguments == null)
-        {
-            Debug.LogWarning(completionArguments.name + " not set");
-            return;
-        }
 
         //prompt gather
         prompt.TimeStart = Time.realtimeSinceStartup;

@@ -21,13 +21,6 @@ public class SinglePromptChat : MonoBehaviour
 
     bool _runOnce;
 
-
-    private void Start()
-    {
-        if (gpt == null) {
-            GameObject gptObject = GameObject.Find("ChatGPTmanagerObject");
-            gptObject.TryGetComponent(out gpt); }
-    }
     //https://platform.openai.com/docs/guides/chat
 
 
