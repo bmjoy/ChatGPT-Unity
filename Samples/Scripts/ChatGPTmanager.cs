@@ -25,7 +25,7 @@ public class ChatGPTmanager : MonoBehaviour
     {
         if (key == null || string.IsNullOrEmpty(key.apiKey))
         {
-            Debug.LogError("No key set");
+            Debug.LogError("No valid key set in:" + key.name);
             return;
         }
 
